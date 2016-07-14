@@ -74,7 +74,7 @@
 - (CATransform3D)configTransform3DWithRotateAngle:(double)angle andPositionX:(double)x andPositionY:(double)y
 {
     CATransform3D transform = CATransform3DIdentity;
-    //  iOS的三维透视投影 实现view（layer）的透视效果（就是近大远小），是通过设置m34的参考：http://blog.csdn.net/yongyinmg/article/details/38780953
+    //  iOS的三维透视投影 实现view（layer）的透视效果（就是近大远小），是通过设置m34的参考：http://blog.csdn.net/dreamjuvenile/article/details/51898444
     //    transform.m34 = 1/0;
     /*
      旋转 CATransform3DRotate (CATransform3D t, CGFloat angle,CGFloat x, CGFloat y, CGFloat z) angle旋转弧度：角度 * M_PI / 180，
